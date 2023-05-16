@@ -24,7 +24,7 @@
       <div class="form-item">
         <label for="password">Password</label>
         <input id="password" placeholder="Your password..."  formControlName="password">
-            <p *ngIf="form.get('email')?.['invalid'] && form.get('email')?.['touched'] && form.get('email')?.['errors']?.['required']">
+            <p *ngIf="form.get('password')?.['invalid'] && form.get('password')?.['touched'] && form.get('password')?.['errors']?.['required']">
                 The field must not be empty
             </p>
             <p *ngIf="form.get('password')?.['invalid'] && form.get('password')?.['touched'] && form.get('password')?.['errors']?.['minlength']">
